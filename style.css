@@ -94,14 +94,14 @@ p {
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
+    height: 1px;px;
+    min: height 1px;px;
   }
   .content {
-    height:30vh;
+    height:20vh;
   }
   h1 {
-    font-size:24px;
+    font-size:12px;
   }
 }
 
@@ -145,11 +145,13 @@ input {
 main {
  max-width: 30%;
  padding-left: 40px;
+ max-height: fit-content;
 }
 
 aside {
 max-width: 50%;
 padding-right: 40px;
+max-height: fit-content;
 
 }
 
@@ -200,4 +202,63 @@ h3 {
     font-size: 2em;
     font-family: 'Lato', sans-serif;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    input {
+        margin-bottom: 10px;}
+
+    img {
+        width: 30%;
+        height: 30%;
+        max-width: 30%;
+        max-height: 45%;
+        object-fit: cover;
+        mix-blend-mode: multiply;
+    }
+
+    h2 {
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+    .login__container {
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 100vh;
+        max-height: 100vh;
+        background-color: rgba(255, 255, 255, 0.582);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+    main {
+        max-width: 100%;
+        padding-left: 0;
+        margin:auto 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    aside {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+
+    p {
+        font-size: 0.8em;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 1px;
+    }
+
+
+
 }
